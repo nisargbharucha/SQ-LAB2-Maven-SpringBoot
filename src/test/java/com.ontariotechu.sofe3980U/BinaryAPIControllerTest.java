@@ -65,7 +65,7 @@ public class BinaryAPIControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.operand1").value(101))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.operand2").value(111))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.result").value(11111))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.result").value(100011))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.operator").value("multiply"));
     }
 
